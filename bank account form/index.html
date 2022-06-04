@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Bank Account Opening Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="main-header">Account Opening Form</h1>
+            <hr />
+            <form action="" id="app-form">
+                <fieldset class="sub-container" id="basic-details">
+                    <h2 class="sub-heading">Basic Details</h2>
+                    <hr />
+                    <label for="dropdown" class="standard-label">
+                        Title<span class="required"></span>
+                        <br />
+                        <select id="dropdown" class="standard-select" required>
+                            <option value="select" disabled selected>Select Title</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Prof">Prof</option>
+                        </select>
+                    </label>
+                    <label for="firstname" class="standard-label">
+                        Frist Name: <span class="required">*</span>
+                        <input class="standard-input" name="firstname" type="text" placeholder="First Name" required />
+                    </label>
+
+                    <label for="middlename" class="standard-label">
+                        Middle Name(IF Applicable):
+                        <input class="standard-input" name="middlename" type="text" placeholder="middle Name" />
+                    </label>
+
+                    <label for="lastname" class="standard-label">
+                        Last Name: <span class="required">*</span>
+                        <input class="standard-input" name="lastname" type="text" placeholder="Last Name" required />
+                    </label>
+
+                    <label for="phone-number" class="standard-label">
+                        phone Number: <span class="requride">*</span>
+                        <input class="standard-input" type="tel" id="phone" name="phone" pattern="\+?\d{10,12}" placeholder="Example: 01925999111" required />
+                    </label>
+
+                    <label for="email-address" class="standard-label">
+                        Email <span class="requride">*</span>
+                        <input class="standard-input" id="email-address" type="email" placeholder="Enter email address" required />
+                    </label>
+
+                    <label for="DOB" class="standard-label">
+                        Date Of Birth <span class="required">*</span>
+                        <input class="standard-input" type="data" name="DOB" id="DOB" required />
+                    </label>
+
+                    <label for="accounttype" class="standard-label">
+                        What type of account are you appliying for ? <span class="required">*</span>
+                        <br />
+                        <select id="account-select" class="standard-select" required>
+                            <option value="select" disabled selected>Choose Account</option>
+                            <option value="basic current">Basic Current Account</option>
+                            <option value="primium current">Primium Current Account</option>
+                            <option value="instant-saver">Instant Access Saving Account</option>
+                            <option value="lifetime-isa">Lifetime ISA</option>
+                            <option value="help-to-by">Help To Buy ISA</option>
+                        </select>
+                    </label>
+
+                    <h2 class="sub-heading">address History</h2>
+                    <hr />
+                    <h3 class="small-heading">Are you currently a India resident ?</h3>
+                    <label for="yes" class="radio-lable"> <input class="radio-input" name="India-res" value="yes" id="yes" type="radio" /> Yes </label>
+                    <label for="yes" class="radio-lable"> <input class="radio-input" name="India-res" value="no" id="no" type="radio" /> No </label>
+
+                    <h3 class="small-heading">Current Address</h3>
+                    <label for="line1" class="standard-label">
+                        Address line 1 <span class="required">*</span>
+                        <input class="standard-input" type="text" required />
+                    </label>
+
+                    <label for="line2" class="standard-label">
+                        Address line 2
+                        <input class="standard-input" type="text" />
+                    </label>
+
+                    <label for="town-city" class="standard-label">
+                        Town/City <span class="required"></span>
+                        <input class="standard-input" type="text" />
+                    </label>
+
+                    <label for="state" class="standard-label">
+                        State <span class="required"></span>
+                        <input class="standard-input" type="text" />
+                    </label>
+
+                    <label for="country" class="standard">
+                        Country
+                        <input class="standard-input" type="text" />
+                    </label>
+
+                    <label for="postcode" class="standard-label">
+                        Post Code <span class="required">*</span>
+                        <input class="standard-input" type="text" maxlength="8" required />
+                    </label>
+
+                    <h3 class="small-heading">Have you lived at any other address within the last 5 years ?</h3>
+
+                    <label for="yes-ptey" class="radio-lable">
+                        <input class="radio-input" name="India-rcs" value="yes" id="yes-ptey" type="radio" />
+                        Yes
+                    </label>
+
+                    <label for="no-ptev" class="radio-label">
+                        <input class="radio-input" name="India-rcs" value="no" id="no-reply" type="radio" />
+                        No
+                    </label>
+                    <div>
+                        <input id="submit-app" type="submit" name="submit" value="Submit Application" onclick="logValues()" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

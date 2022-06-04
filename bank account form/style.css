@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+fieldset {
+    min-height: 200px;
+    background: linear-gradient(#5581f1, #1153fc);
+}
+
+.main-header {
+    color: #fff;
+}
+
+.standard-label,
+.standard-input {
+    display: block;
+}
+
+.standard-label {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.standard-input,
+standard-select {
+    margin-top: 10px;
+    border: 3px solid #00ffff;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.standard-input {
+    height: 25px;
+    width: 250px;
+    font-size: 1em;
+}
+
+.standard-select {
+    height: 32px;
+    width: 150px;
+    font-size: 1em;
+}
+
+.sub-heading {
+    color: #fff;
+}
+
+#account-select {
+    width: 260px;
+}
+
+.container {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    padding: 10px;
+    background: linear-gradient(#00e1fd, #a32cdf);
+}
+
+.sub-container {
+    padding-left: 10px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+.required {
+    font-size: 1.5em;
+    color: #00ff5b;
+}
+
+.small-heading {
+    font-size: 18px;
+}
+
+.radio-label {
+    font-size: 20px;
+    margin: 0 40px;
+}
+
+.radio-input {
+    margin-bottom: 25px;
+}
+
+button {
+    border: 2px solid #fff;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+}
+
+label {
+    color: #fff;
+}
+
+input[type="data"]::-webkit-calander-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+#show-address {
+    display: none;
+    float: right;
+}
+
+#address-history {
+    display: none;
+}
+
+#non-uk {
+    display: none;
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}
+
+#current-address {
+    display: none;
+}
+
+#info-request {
+    display: none;
+}
+
+#submit-app {
+    display: block;
+    border: 2px solid red;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 15px auto;
+    height: 35px;
+    width: 180px;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+#submit-app:hover {
+    border: 2px solid #0014ff;
+    color: #c165dd;
+    background-color: #45f3ff;
+}
+
+input[type="checkbox"] {
+    height: 50px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
